@@ -610,6 +610,10 @@ section {
 }
 .close-icon {
   fill: var(--logo-header-color);
+  transition: fill 250ms var(--cubic);
+}
+.modal-close:hover .close-icon {
+  fill: var(--accent-color);
 }
 .modal-title {
   font-weight: 700;
@@ -646,6 +650,8 @@ section {
   min-height: 120px;
   margin-bottom: 20px;
   padding: 16px 12px;
+  resize: none;
+  min-height: 120px;
 }
 .form-input::placeholder {
   font-size: 12px;
@@ -689,6 +695,7 @@ section {
   margin-bottom: 30px;
   align-items: center;
   text-align: center;
+  justify-content: center;
 }
 .modal-checkbox span {
   display: flex;
